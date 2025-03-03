@@ -61,18 +61,6 @@ This ensures the service remains operational.
 - The Cloudflare DDNS container is run in **read-only** mode with dropped capabilities for enhanced security.
 - Uses `security_opt: - no-new-privileges:true` to prevent privilege escalation.
 
-## Stopping and Removing Containers
-
-To stop the containers:
-```sh
-docker compose down
-```
-
-To remove all images and volumes:
-```sh
-docker system prune -a --volumes
-```
-
 ## Contributing
 
 Feel free to submit issues and pull requests to improve this setup!
